@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head>
+      <title>Drive Pro</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+   </head>
+   <body class="reak-body">
+      <nav>
+         <div class="mobil-nav" id="mobil" onclick="myFunction()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </div>
+         <div class="logo"><a href="index.html">Drive Pro</a></div>
+         <ul class="nav-bar" id="nav">
+            <li class="nav-li"><a href="index.html">Főoldal</a></li>
+            <li class="nav-li"><a href="kategoriak.html">Kategóriák</a></li>
+            <li class="nav-li"><a href="oktatok.html">Oktatók</a></li>
+            <li class="nav-li"><a href="jarmupark.html">Járműpark</a></li>
+            <li class="nav-li"><a href="reakteszt.html" class="active">Reakció-teszt</a></li>
+            <li class="nav-li"><a href="signup.html">Jelentkezés</a></li>
+         </ul>
+      </nav>
+      <div class="row nav-margin padding-10">
+         <h1>Reakcióidő fontossága</h1>
+         <p class="reak-p">Az átlagos emberi reakcióidő kb. 300ms, vezetés közben ez azonban akár egy másodpercre is kinyúlhat. Éppen ezért nem tudjuk eléggé hangsúlyozni a tapasztalatlan sofőröknek, hogy legyenek tisztában képességeikkel, és ahhoz mérten közlekedjenek. Alábbi tesztünkkel lemérheted a reakcióidődet, illetve becslést kapsz arra, hogy az általad választott sebesség mellett kb. mekkora távolságot haladtál közben.</p>
+         <div class="col-12 col-s-12">
+            <div class="col-3 col-s-3 speedBtns">
+               <input class="" type="radio" id="lassu" name="sebesseg">
+               <label for="lassu" class="radiolabel">20 km/h</label>
+            </div>
+            <div class="col-3 col-s-3 speedBtns">
+               <input class="" type="radio" id="varosi" name="sebesseg" checked>
+               <label for="varosi" class="radiolabel">50 km/h</label>
+            </div>
+            <div class="col-3 col-s-3 speedBtns">
+               <input class="" type="radio" id="orszaguti" name="sebesseg">
+               <label for="orszaguti" class="radiolabel">80 km/h</label>
+            </div>
+            <div class="col-3 col-s-3 speedBtns">
+               <input class="" type="radio" id="autopalya" name="sebesseg">
+               <label for="autopalya" class="radiolabel">130 km/h</label>
+            </div>
+         </div>
+         <div class="col-8 col-s-10 video-container">
+            <video src="reakciovid.mp4" loop class="reakteszt" id="reakvideo"></video>
+            <div class="video-overlay" id="vid-overlay">
+               <p>STOP</p>
+            </div>
+         </div>
+         <div class="col-6 col-s-6 btn-spacing">
+            <button onclick="startVid()" id="startBtn">START</button>
+            <button id="stopBtn" onclick="stopVid()">STOP</button>
+         </div>
+         <p id="ido" class="reak-p"></p>
+         <p class="reak-p">Mindenki, aki rendelkezik jogosítvánnyal tisztában van azzal, hogy a sebesség és a fékút között négyzetes összefüggés van. Neked megéri sietni? Reméljük, az <a href="https://totalcar.hu/magazin/velemeny/2017/08/16/mennyit_nyersz_vele/" target="_blank">ITT</a> található cikk olvasása után egyértelmű lesz a válasz.</p>
+      </div>
+      <footer class="margin">
+         <p>Az oldal tanulmányi célokat szolgál. BCE 2018 S.Dávid</p>
+      </footer>
+   </body>
+</html>

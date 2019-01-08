@@ -1,0 +1,1012 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+nav {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+li {
+    float: left;
+}
+
+p, h1 {
+    font-family: 'Niramit', sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8.1px 12px;
+    text-decoration: none;
+    font-family: 'Niramit', sans-serif;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#mobilcover {
+    display: none;
+}
+
+.active {
+	background-color:#007dc1;
+}
+
+.logo {
+    color: white;
+    float: left;
+    font-variant: small-caps;
+    font-weight: 800;
+    font-size: 36px;
+    font-style: italic;
+    font-family: sans-serif;
+    letter-spacing: -2px;
+    margin: 1.7px 0 1.7px 15px;
+}
+
+.main-show {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+}
+
+.main-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay {
+    position: absolute; 
+    bottom: 0; 
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1; 
+    width: 100%;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.welcome-p {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-margin {
+    margin-top: 45px;
+}
+
+.nav-padding {
+    padding-top: 45px;
+}
+
+.main-signup {
+	background-color:#007dc1;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 38px;
+	text-decoration:none;
+}
+.main-signup:hover {
+	background-color:#0061a7;
+}
+
+.info {
+    float: left;
+    padding: 0;
+}
+  
+.card {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #1b3348;
+    color: white;
+    height: 100%;
+}
+  
+.categories {
+    position: relative;
+}
+
+.full-wide {
+    vertical-align: middle;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categ-text {
+    position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.kat-image {
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.kat-shadow {
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.kat-content {
+    margin-top: 15vh;
+    text-align: center;
+    color: white;
+}
+
+.img1 {
+    background-image: url("kepek/wp/hegy.jpg");
+}
+
+.img2 {
+    background-image: url("kepek/wp/akadaly.jpg");
+}
+
+.img3 {
+    background-image: url("kepek/wp/city.jpg");
+}
+
+.img4 {
+    background-image: url("kepek/wp/parking.jpg");
+}
+
+.reakteszt {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+}
+
+.video-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0e0e94;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-overlay p {
+    color: white;
+    position: relative;
+    font-size: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 15%;
+}
+
+#stopBtn {
+	background-color:#f24537;
+	border-radius:42px;
+	border:2px solid #d02718;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+	width: 75px;
+    height: 75px;
+    float: right;
+}
+
+#stopBtn:hover {
+	background-color:#c62d1f;
+}
+#stopBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#startBtn {
+	background-color:#44c767;
+	border-radius:42px;
+	border:2px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+    width: 75px;
+    height: 75px;
+}
+
+#startBtn:hover {
+	background-color:#2bb82f;
+}
+#startBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#startBtn:focus, #stopBtn:focus {
+    outline: none;
+}
+
+.reak-p {
+    background: #1e8bc7;
+    padding: 10px;
+}
+
+.reak-body {
+    background-color: #124d77;
+}
+
+#ido {
+    color: white;
+}
+
+.signup-content {
+    background-image: url(kepek/wp/signup-wp.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    min-height: 100vh;
+}
+
+.signup-container {
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    padding-top: 0px;
+    bottom: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+.padding-t-30 {
+       padding-top: 30px; 
+}
+
+.signup-p {
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+    font-size: 18px;
+}
+
+form {
+    color: white;
+    width: 94%;
+    margin: 0 auto;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.speedBtns {
+    width: 50%;
+    padding: 15px;
+}
+
+#mobilcover {
+    display: block;
+}
+
+#deskcover {
+    display: none;
+}
+
+.activated  {
+    display: grid;
+    margin-top: 46.4px;
+    margin:0;
+    position: absolute;
+    transform: translateX(-200px);
+}
+
+.line1, .line2, .line3 {
+    width: 35px;
+    height: 5px;
+    background-color: #138ed2;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.divider {
+    width: 150px;
+    height: 5px;
+    background-color: #0078a8;
+    border-radius: 5px;
+    margin: 20px auto; 
+}
+
+.form-button {
+    background-color: #007dc1;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 38px;
+    text-decoration: none;
+}
+
+.form-button:hover {
+    background-color: #124d77;
+}
+
+.form-button:focus {
+    outline: none;
+}
+
+.form-bottom-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 305px;
+}
+
+#azonosito {
+    width: 30%;
+}
+
+#azonosito-p {
+    width: 70%;
+    text-align: left;
+}
+
+.button-margin {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.nav-bar {
+    transition: 0.4s;
+    background-color: #333;
+    position: absolute;
+    top: 46px;
+    right: -200px;
+    width: 200px;
+    display: grid;
+}
+.change .line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .line2 {opacity: 0;}
+
+.change .line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-9px, -7px);
+}
+
+.nav-li {
+    display: block;
+}
+
+.mobil-nav {
+    display: block;
+    float: right;
+    margin: 3.7px 0;
+}
+
+
+label, .label {
+    margin-top: 12px;
+    font-size: 18px;
+    padding-left: 0;
+    font-family: 'Niramit', sans-serif;
+}
+
+.textbox {
+    border-radius: 8px;
+    padding-left: 7px;
+    line-height: 1.8em;
+}
+
+input[type=radio] {
+    height: 15px;
+    width: initial;
+    float: initial;
+    margin-top: 12px;
+}
+
+p.error {
+    float: right;
+    color: red;
+    font-style: italic;
+    font-size: 16px;
+}
+
+input.error {
+    border-color: red;
+    border-style: outset;
+    border-width: 3px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.radiolabel {
+    float: initial;
+    margin-right: 25px;
+}
+
+.our-members {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.member-name {
+    position: absolute;
+    bottom: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.member-popup {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #008CBA;
+    overflow: hidden;
+    height: 0;
+    transition: .5s;
+}
+
+.member-container {
+    position: relative;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.member-spacing {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.member-name button {
+    position: relative;
+    float: right;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+    bottom: 27px;
+    border-style: none;
+    font-size: 20px;
+    font-family: fantasy;
+    background-color: lightblue;
+    right: 10px;
+    cursor: pointer;
+}
+
+.member-name button:hover {
+    background-color: black;
+    color: white;
+}
+
+.member-name p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sub-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.member-side {
+    display: none;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.member-box {
+    width: 100%;
+}
+
+.side-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    color: white;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.members-page {
+    background-image: url(kepek/wp/road.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.member-popup button {
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    height: 25px;
+    width: 25px;
+}
+
+.member-popup i.fa-angle-up {
+    font-size: 36px;
+    font-weight: 900;
+    position: relative;
+    bottom: 7px;
+}
+
+.fa-size {
+    font-size: 1.3em;
+}
+
+.galery {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galery img {
+    height: auto;
+    width: 100%;
+    padding: 3px;
+}
+
+.img-sizing {
+    width: 100%;
+    height: auto;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999; 
+    padding-top: 65px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    padding-top: 0;
+    border: 1px solid #888;
+    width: 95%;
+    position: relative;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+}
+
+.modal-page {
+    bottom: 46px;
+    height: 25px;
+    width: 80px;
+    margin-left: 3px;
+    background-color: black;
+    position: absolute;
+    cursor: pointer;
+}
+
+.modal-page-right {
+    right: 20px;
+    margin-right: 3px;
+}
+
+.left-icon, .right-icon {
+    color: white;
+    margin-top: -3px;
+    font-size: 32px;
+    margin-left: 34px;
+}
+
+.img-description {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    text-align: right;
+}
+
+#smallImgs {
+    display: none;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.jarmu-body {
+    background-image: url(kepek/wp/car-pattern.png);
+}
+
+.index-body {
+    background-color: #254662;
+}
+
+.kapcsolat {
+    float: left;
+}
+
+.kapcsolat-li {
+    float: none;
+    padding: 12px;
+    font-size: 18px;
+    background-color: darkgrey;
+    margin: 5px;
+    border-style: solid;
+}
+
+.data-part h3, h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    color: #b4bec6;
+}
+
+footer.margin {
+    margin-top: 10px;
+}
+
+footer p {
+    padding: 5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 460px) {
+    .member-box {
+        width: 50%;
+    }
+
+    .sub-text {
+        top: 45%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .col-s-20 {width: 20%;}
+    .col-s-30 {width: 30%;}
+}
+
+@media only screen and (min-width: 820px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .col-11_11 {width: 11.11%;}
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        padding: 50px 0;
+    }
+
+    label, .label {
+        line-height: 1.5em;
+        margin: 15px 0;
+        padding-left: 15px;
+    }
+
+    .textbox {
+        margin: 15px 0;
+    }
+
+    .checklabel {
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .padding-left-15 {
+        padding-left: 15px;
+    }
+
+    p.error {
+        margin-top: -10px;
+    }
+
+    p#tel-error, p#jogsi-error {
+        position: absolute;
+        margin-top: 50px;
+        right: 50%;
+    }
+
+    p#jarmu-error {
+        position: absolute;
+        right: 3%;
+    }
+    
+    input[type=radio] {
+        margin-top: 20px;
+    }
+
+    .member-side {
+        display: block;
+    }
+
+    .member-box {
+        border-style: solid;
+        border-color: white;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .member-name button {
+        display: none;
+    }
+
+    .member-container {
+        margin: 0;
+    }
+
+    .member-popup {
+        display: none;
+    }
+
+    .sub-text {
+        font-size: 20px;
+    }
+
+    .modal-page {
+        width: 35px;
+        height: 50px;
+        top: 50%;
+        margin-left: 0;
+    }
+
+    .modal-page-right {
+        margin-right: 0;
+    }
+
+    .left-icon {
+        font-size: 42px;
+        margin-top: 4.2px;
+        margin-left: 5px;
+    }
+
+    .right-icon {
+        font-size: 42px;
+        margin-top: 4.2px;
+        margin-left: 15px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .video-container {
+        margin-left: 8.33%;
+        margin-right: 8.33%;
+    }
+
+    .btn-spacing {
+        margin: 15px 25%;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .nav-li {
+        display: block;
+    }
+    .mobil-nav {
+        display: none;
+        float: right;
+        margin: 3.7px 0;
+    }
+    
+    #deskcover {
+        display: block;
+    }
+    #mobilcover {
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+    }
+
+    .welcome-p {
+        font-size: 20px;
+        margin: 0 40px;
+    }
+
+    p.error {
+        margin-top: 0;
+    }
+    
+    .signup-container {
+        position: relative;
+        padding-top: 30px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    p#jarmu-error {
+        right: 10%;
+    }
+
+    .divider {
+        width: 450px;
+    }
+
+    .padding-t-30 {
+        padding-top: 0;
+    }
+
+    .side-text, .member-side {
+        margin: 0;
+    }
+
+    .modal-page {
+        top: 30%;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+
+    #smallImgs {
+        display: block;
+    }
+
+    .kapcsolat-margin {
+        margin-left: 8.33%;
+    }
+
+    .kapcsolat {
+        padding-right: 15px;
+    }
+
+    .video-container {
+        margin-left: 16.66%;
+        margin-right: 16.66%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .member-side {
+        margin-top: 30px;
+    }
+}
+
+

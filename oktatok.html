@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head>
+      <title>Drive Pro</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+      <script src="script.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body class="members-page">
+      <nav>
+         <div class="mobil-nav" id="mobil" onclick="myFunction()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </div>
+         <div class="logo"><a href="index.html">Drive Pro</a></div>
+         <ul class="nav-bar" id="nav">
+            <li class="nav-li"><a href="index.html">Főoldal</a></li>
+            <li class="nav-li"><a href="kategoriak.html">Kategóriák</a></li>
+            <li class="nav-li"><a href="oktatok.html" class="active">Oktatók</a></li>
+            <li class="nav-li"><a href="jarmupark.html">Járműpark</a></li>
+            <li class="nav-li"><a href="reakteszt.html">Reakció-teszt</a></li>
+            <li class="nav-li"><a href="signup.html">Jelentkezés</a></li>
+         </ul>
+      </nav>
+      <div class="row nav-margin member-spacing">
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/statham.jpg" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Frank Martin</p>
+                  <button onclick="memberInfo(0)">i</button>    
+               </div>
+               <div class="member-popup" id="popup0">
+                  <div class="sub-text">
+                     <p>Kategóriák: Város | Hegy</p>
+                     <p>Mottó: "A tanácsom a következő: ÖRÜLJ, HOGY ÉLSZ!"</p>
+                     <p>Jármű: <i class="fa fa-car fa-size"></i>
+                        <i class="fa fa-motorcycle fa-size"></i>
+                     </p>
+                  </div>
+                  <button onclick="closePopup(0)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Város | Hegy</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"A tanácsom a következő: ÖRÜLJ, HOGY ÉLSZ!"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+                  <i class="fa fa-motorcycle fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/tobey.jpg" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Tobey Marshall</p>
+                  <button onclick="memberInfo(1)">i</button>    
+               </div>
+               <div class="member-popup" id="popup1">
+                  <div class="sub-text">
+                     <p>Kategóriák: Parkoló | Hegy</p>
+                     <p>Mottó: "Láttalak már vezetni, és rettenetes"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                     </p>
+                  </div>
+                  <button onclick="closePopup(1)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Parkoló | Hegy</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Láttalak már vezetni, és rettenetes"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/dom.png" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Dominic Toretto</p>
+                  <button onclick="memberInfo(2)">i</button>    
+               </div>
+               <div class="member-popup" id="popup2">
+                  <div class="sub-text">
+                     <p>Kategóriák: Város | Akadálypálya</p>
+                     <p>Mottó: "Ezúttal nem lesz elég ha csak gyorsak vagyunk"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                     </p>
+                  </div>
+                  <button onclick="closePopup(2)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Város | Akadálypálya</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Ezúttal nem lesz elég ha csak gyorsak vagyunk"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/alonso.jpg" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Fernando Alonso</p>
+                  <button onclick="memberInfo(3)">i</button>    
+               </div>
+               <div class="member-popup" id="popup3">
+                  <div class="sub-text">
+                     <p>Kategóriák: Akadálypálya</p>
+                     <p>Mottó: "Versenyezni szeretek, nem egyedül körözni"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                     </p>
+                  </div>
+                  <button onclick="closePopup(3)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Akadálypálya</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Versenyezni szeretek, nem egyedül körözni"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/letty.png" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Letty Ortiz</p>
+                  <button onclick="memberInfo(4)">i</button>    
+               </div>
+               <div class="member-popup" id="popup4">
+                  <div class="sub-text">
+                     <p>Kategóriák: Város | Hegy</p>
+                     <p>Mottó: "Ez az ember őrült"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                        <i class="fa fa-motorcycle fa-size"></i>  
+                     </p>
+                  </div>
+                  <button onclick="closePopup(4)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Város | Hegy</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Ez az ember őrült"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+                  <i class="fa fa-motorcycle fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/butch2.jpg" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Butch Coolidge</p>
+                  <button onclick="memberInfo(5)">i</button>    
+               </div>
+               <div class="member-popup" id="popup5">
+                  <div class="sub-text">
+                     <p>Kategóriák: Akadálypálya</p>
+                     <p>Mottó: "Ez egy chopper bébi"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-motorcycle fa-size"></i>  
+                     </p>
+                  </div>
+                  <button onclick="closePopup(5)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Akadálypálya</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Ez egy chopper bébi"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-motorcycle fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/hamilton.png" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Lewis Hamilton</p>
+                  <button onclick="memberInfo(6)">i</button>    
+               </div>
+               <div class="member-popup" id="popup6">
+                  <div class="sub-text">
+                     <p>Kategóriák: Parkoló | Város</p>
+                     <p>Mottó: "Azért születtem, hogy versenyezzek és nyerjek."</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                     </p>
+                  </div>
+                  <button onclick="closePopup(6)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Parkoló | Város</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Azért születtem, hogy versenyezzek és nyerjek."</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/daniel.jpg" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Daniel Morales</p>
+                  <button onclick="memberInfo(7)">i</button>    
+               </div>
+               <div class="member-popup" id="popup7">
+                  <div class="sub-text">
+                     <p>Kategóriák: Parkoló | Város</p>
+                     <p>Mottó: "Ne essen pánikba, most rálépek a pedálra!"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                     </p>
+                  </div>
+                  <button onclick="closePopup(7)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Parkoló | Város</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Ne essen pánikba, most rálépek a pedálra!"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/han.jpg" alt="" class="our-members">
+               <div class="member-name">
+                  <p>Han Lue</p>
+                  <button onclick="memberInfo(8)">i</button>    
+               </div>
+               <div class="member-popup" id="popup8">
+                  <div class="sub-text">
+                     <p>Kategóriák: Akadálypálya | Város</p>
+                     <p>Mottó: "Mit gondolsz, hagyom hogy Hyundaiban ülj?"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                        <i class="fa fa-motorcycle fa-size"></i>  
+                     </p>
+                  </div>
+                  <button onclick="closePopup(8)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Akadálypálya | Város</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Mit gondolsz, hagyom hogy Hyundaiban ülj?"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+                  <i class="fa fa-motorcycle fa-2x"></i>
+               </div>
+            </div>
+         </div>
+         <div class="col-6 col-s-12 member-box">
+            <div class="col-6 col-s-6 member-container">
+               <img src="kepek/members/john.jpg" alt="" class="our-members">
+               <div class="member-name">
+                  <p>John Wick</p>
+                  <button onclick="memberInfo(9)">i</button>    
+               </div>
+               <div class="member-popup" id="popup9">
+                  <div class="sub-text">
+                     <p>Kategóriák: Összes</p>
+                     <p>Mottó: "Civilizáltnak tűnök?"</p>
+                     <p>Jármű: 
+                        <i class="fa fa-car fa-size"></i>
+                        <i class="fa fa-motorcycle fa-size"></i>  
+                     </p>
+                  </div>
+                  <button onclick="closePopup(9)" class=""><i class="fa fa-angle-up"></i></button>
+               </div>
+            </div>
+            <div class="col-6 col-s-6 member-side">
+               <div class="side-text">
+                  <h3>Kategóriák:</h3>
+                  <p>Összes</p>
+                  <h3>Mottó:</h3>
+                  <p class="quote">"Civilizáltnak tűnök?"</p>
+                  <h3>Jármű:</h3>
+                  <i class="fa fa-car fa-2x"></i>
+                  <i class="fa fa-motorcycle fa-2x"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="margin">
+         <p>Az oldal tanulmányi célokat szolgál. BCE 2018 S.Dávid</p>
+      </footer>
+   </body>
+</html>

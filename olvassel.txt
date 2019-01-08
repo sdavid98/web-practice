@@ -1,0 +1,14 @@
+Sági Dávid 
+url: http://web.uni-corvinus.hu/~cf7jqa/
+böngészõ: Chrome
+Az index.html oldalon található térkép Leaflet-tel készült. (https://leafletjs.com/)
+Az ûrlapot (signup.html) jQuery validátorral dolgoztam fel, azzal amit órán is használtunk.
+Google fontos használtam a manüben és számos leírásban. (https://fonts.google.com/specimen/Niramit)
+Az ûrlap html5 elemei: 
+	E-mail cím: "email", 
+	Telefon: "tel", 
+	Születési idõ: "date", 
+	Jogosítvány kelte: "month"
+
+A weboldal friss jogosítvánnyal rendelkezõ fiataloknak nyújt gyakorlási lehetõséget. 
+A jelentkezõ választhat autó és motor között, valamint választhat kategóriá(ka)t és oktatót is. 
